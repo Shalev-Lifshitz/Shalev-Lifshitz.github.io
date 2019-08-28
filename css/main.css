@@ -537,6 +537,19 @@ a:hover, a:focus {
   color: #fff;
 }
 
+/* @media only screen and (max-width: 640px) {
+  body {
+    .header-area {
+      background-image: url(../img/header-area.jpg);
+      background-position-x: -270px;
+      background-position-y: 10px;;
+      background-position: 65% 0;
+      height: 100vh;
+      color: #fff;
+    }
+  }
+} */
+
 .header-area:before {
   background-color: rgba(0, 0, 0, 0.61);
 }
