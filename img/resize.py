@@ -13,4 +13,5 @@ def resize_newsetter(img_file, save_name):
     plt.imshow(new)
     cv2.imwrite(save_name, new)
 
-resize_newsetter("meConvention_edit.png", "meConvention_newsletter.jpg")
+# resize_newsetter("summer_newsletter.jpg", "summer_newsletter_resized.jpg")
+resize_portfolio("paper1_border.jpg", "paper1_portfolio.jpg")
