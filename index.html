@@ -17,7 +17,8 @@
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
     <!-- CSS Assets -->
     <link rel="stylesheet" href="css/bootstrap-custom.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Exo+2:400%7CPoppins:300,400,500,600,700%7CRaleway:300,400,500,600,700,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Exo+2:400%7CPoppins:300,400,500,600,700%7CRaleway:300,400,500,600,700,800"
+          rel="stylesheet">
     <link rel="stylesheet" href="css/ionicons.min.css">
     <link rel="stylesheet" href="css/hamburgers-custom.min.css">
     <link rel="stylesheet" href="css/lity.min.css">
@@ -29,518 +30,551 @@
 </head>
 
 <body>
-    <!-- Preloader -->
-    <div class="preloader">
-        <div class="preloader-section preloader-right">
-        </div>
-        <div class="preloader-section preloader-left">
-        </div>
-        <div class="preloader-icon">
-            <span class="loading-dot loading-dot-1"></span>
-            <span class="loading-dot loading-dot-2"></span>
-            <span class="loading-dot loading-dot-3"></span>
-        </div>
+<!-- Preloader -->
+<div class="preloader">
+    <div class="preloader-section preloader-right">
     </div>
-    <header>
-        <!-- Navbar Area -->
-        <nav id="navbar" class="navbar navbar-expand-lg navbar-dark fixed-top">
-            <div class="container">
-                <a class="navbar-brand" data-scroll href="#header-area">Shalev Lifshitz</a>
-                <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="nav-btn">Menu</span>
-                </button>
-                <div class="d-flex flex-row  order-0 order-lg-1">
-                    <div class="navbar-nav flex-row">
-                        <button id="navBtn" class="hamburger hamburger--slider" type="button">
+    <div class="preloader-section preloader-left">
+    </div>
+    <div class="preloader-icon">
+        <span class="loading-dot loading-dot-1"></span>
+        <span class="loading-dot loading-dot-2"></span>
+        <span class="loading-dot loading-dot-3"></span>
+    </div>
+</div>
+<header>
+    <!-- Navbar Area -->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" data-scroll href="#header-area">Shalev Lifshitz</a>
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span class="nav-btn">Menu</span>
+            </button>
+            <div class="d-flex flex-row  order-0 order-lg-1">
+                <div class="navbar-nav flex-row">
+                    <button id="navBtn" class="hamburger hamburger--slider" type="button">
                             <span class="hamburger-box">
                         <span class="hamburger-inner"></span>
                             </span>
-                        </button>
-                    </div>
+                    </button>
                 </div>
-                <div id="navbarSupportedContent" class="collapse navbar-collapse order-1 order-lg-0">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#header-area">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about-area">About</a>
-                        </li>
-                        <!-- <li class="nav-item">
-                            <a class="nav-link" href="#skills-area">Skills</a>
-                        </li> -->
-                        <li class="nav-item">
-                            <a class="nav-link" href="#portfolio-area">Portfolio</a>
-                        </li>
-                        <!-- <li class="nav-item">
-                            <a class="nav-link" href="#testimonials-area">Quotes</a>
-                        </li> -->
-                        <li class="nav-item">
-                            <a class="nav-link" href="#blog-area">Newsletter</a>
-                        </li>
-                        <!-- <li class="nav-item">
-                            <a class="nav-link" href="#contact-area">Contact</a>
-                        </li> -->
-                    </ul>
-                </div>
-                <div class="sidebar" id="sidebar">
-                    <button id="sidebarBtn" class="hamburger hamburger--slider is-active" type="button">
+            </div>
+            <div id="navbarSupportedContent" class="collapse navbar-collapse order-1 order-lg-0">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#header-area">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about-area">About</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#skills-area">Skills</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio-area">Portfolio</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#testimonials-area">Quotes</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blog-area">Newsletter</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#contact-area">Contact</a>
+                    </li> -->
+                </ul>
+            </div>
+            <div class="sidebar" id="sidebar">
+                <button id="sidebarBtn" class="hamburger hamburger--slider is-active" type="button">
                         <span class="hamburger-box">
                         <span class="hamburger-inner"></span>
                         </span>
-                    </button>
-                    <div class="about-me">
-                        <img class="img-fluid img-thumbnail d-block mx-auto avatar" src="img/sidebar-avatar.jpg" alt="About me">
-                        <address>
-                            <ul class="list-unstyled">
-                                <li>
-                                    <span>Name</span>
-                                    <p>Shalev Lifshitz</p>
-                                </li>
-                                <li>
-                                    <span>Curriculum Vitae</span>
-                                    <p><a href="CV.pdf">View CV</a></p>
-                                </li>
-                                <li>
-                                    <span>Email</span>
-                                    <p><a href="mailto:lifshitz.shalev@gmail.com">lifshitz.shalev@gmail.com</a></p>
-                                </li>
-                                <li>
-                                    <span>Current:</span>
-                                    <p>University of Toronto, Claronav </p>
-                                </li>
-                                <li>
-                                    <span>Residence</span>
-                                    <p>Toronto, Canada</p>
-                                </li>
-                            </ul>
-                        </address>
-                        <div class="social-medias">
-                            <a href="https://twitter.com/Shalev_lif">
+                </button>
+                <div class="about-me">
+                    <img class="img-fluid img-thumbnail d-block mx-auto avatar" src="img/sidebar-avatar.jpg"
+                         alt="About me">
+                    <address>
+                        <ul class="list-unstyled">
+                            <li>
+                                <span>Name</span>
+                                <p>Shalev Lifshitz</p>
+                            </li>
+                            <li>
+                                <span>Curriculum Vitae</span>
+                                <p><a href="CV.pdf">View CV</a></p>
+                            </li>
+                            <li>
+                                <span>Email</span>
+                                <p><a href="mailto:lifshitz.shalev@gmail.com">lifshitz.shalev@gmail.com</a></p>
+                            </li>
+                            <li>
+                                <span>Current:</span>
+                                <p>University of Toronto, Claronav </p>
+                            </li>
+                            <li>
+                                <span>Residence</span>
+                                <p>Toronto, Canada</p>
+                            </li>
+                        </ul>
+                    </address>
+                    <div class="social-medias">
+                        <a href="https://twitter.com/Shalev_lif">
                             <i class="icon ion-logo-twitter"></i>
                         </a>
-                            <a href="https://www.linkedin.com/in/shalev-lifshitz/">
+                        <a href="https://www.linkedin.com/in/shalev-lifshitz/">
                             <i class="icon ion-logo-linkedin"></i>
                         </a>
-                            <a href="https://www.youtube.com/channel/UCj_PiE2tDScdXu9BQgDXD1A">
+                        <a href="https://www.youtube.com/channel/UCj_PiE2tDScdXu9BQgDXD1A">
                             <i class="icon ion-logo-youtube"></i>
                         </a>
-                            <a href="https://github.com/Shalev-Lifshitz">
+                        <a href="https://github.com/Shalev-Lifshitz">
                             <i class="icon ion-logo-github"></i>
                         </a>
-                            <a href="https://www.facebook.com/shalev.lifshitz.7">
+                        <a href="https://www.facebook.com/shalev.lifshitz.7">
                             <i class="icon ion-logo-facebook"></i>
                         </a>
-                        </div>
                     </div>
                 </div>
             </div>
-        </nav>
-        <!-- Header Area (Home) -->
-        <section class="header-area section-fixed-bg section-overlay-bg" id="header-area">
-            <div id="particles-js"></div>
-            <div class="container h-100">
-                <div class="row h-100 align-items-center justify-content-center">
-                    <div class="col-12 col-lg-8 home-content text-center">
-                        <h5 class="greet">Hello, my name is <b>Shalev Lifshitz</b></h5>
-                        <h1 class="skills cd-headline clip">
+        </div>
+    </nav>
+    <!-- Header Area (Home) -->
+    <section class="header-area section-fixed-bg section-overlay-bg" id="header-area">
+        <div id="particles-js"></div>
+        <div class="container h-100">
+            <div class="row h-100 align-items-center justify-content-center">
+                <div class="col-12 col-lg-8 home-content text-center">
+                    <h5 class="greet">Hello, my name is <b>Shalev Lifshitz</b></h5>
+                    <h1 class="skills cd-headline clip">
                             <span class="cd-words-wrapper single-skill">
                              <b class="is-visible">AI Researcher</b>
                              <b>Entrepreneur</b>
                              <b>Futurist</b>
                           </span>
-                        </h1>
-                        <p class="description">19 years old, Canadian, and striving to develop the future of technology. My goal is to spark the next wave of human innovation and help humanity reach a new evolutionary step.</p>
-                        <a class="btn work" data-scroll href="#portfolio-area" role="button">My Portfolio</a>
-                        <a class="btn hire button-scheme" data-scroll href="https://www.linkedin.com/in/shalev-lifshitz/" role="button">Get in Touch</a>
-                    </div>
-                    <div class="scroll-icon">
-                        <a data-scroll href="#about-area">
-                            <div class="mouse">
-                                <div class="wheel"></div>
-                            </div>
-                        </a>
-                    </div>
+                    </h1>
+                    <p class="description">19 years old, Canadian, and striving to develop the future of technology. My
+                        goal is to spark the next wave of human innovation and help humanity reach a new evolutionary
+                        step.</p>
+                    <a class="btn work" data-scroll href="#portfolio-area" role="button">My Portfolio</a>
+                    <a class="btn hire button-scheme" data-scroll href="https://www.linkedin.com/in/shalev-lifshitz/"
+                       role="button">Get in Touch</a>
+                </div>
+                <div class="scroll-icon">
+                    <a data-scroll href="#about-area">
+                        <div class="mouse">
+                            <div class="wheel"></div>
+                        </div>
+                    </a>
                 </div>
             </div>
-        </section>
-    </header>
-    <!-- About Area -->
-    <section class="single-section about-area" id="about-area">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-12">
-                    <div class="row align-items-center">
-                        <div class="col-12 col-lg-5">
-                            <img class="img-fluid img-thumbnail about-img" src="img/at_table_thin.jpg" alt="About Picture">
-                        </div>
-                        <div class="col-12 col-lg-7">
-                            <div class="content-block">
-                                <h2 class="about-title">About Me</h2>
-                                <h6 class="about-role">A Young AI Researcher and Entrepreneur</h6>
-                                <p class="about-description">I am an 19-year-old AI researcher and entrepreneur striving to develop the future of technology. I have spoken at 
-                                    various international conferences, inspiring many to think about the future of AI and explore which questions need to be asked to prepare for 
-                                    human-level artificial intelligence.</p>
-                                <p class="about-description second">I first fell in love with the field of AI since it was the bridge between both of my passions: the brain and technology.</p>
-                                <p class="about-description third">I have co-authored a paper with the University of Waterloo that attempts to <b>rethink the basic structure of Artificial Neural Networks by taking more inspiration from the human brain</b>. I have also been creating algorithms that can <b>automatically detect structures in patient CT scans</b> at Claronav, a surgical navigation company. The algorithms I created are currently implemented in surgical navigation units around the globe. At the University of Waterloo, I have also created <b>a new histopathology image retrieval algorithm that can help pathologists diagnose cancer and other diseases.</b></p>
-                                <p class="about-description last "><i>My goal? To spark the next wave of human innovation and help humanity reach a new evolutionary step.</i></p>
-                                <address>
-                                    <ul class="list-inline about-info">
-                                        <li class="list-inline-item">
-                                            <span>Email:</span>
-                                            <p><a href="mailto:lifshitz.shalev@gmail.com">lifshitz.shalev@gmail.com</a></p>
-                                        </li>
-                                        <li class="list-inline-item mb-0">
-                                            <span>Youtube Channel:</span>
-                                            <p><a href="https://www.youtube.com/channel/UCj_PiE2tDScdXu9BQgDXD1A">Watch My Talks</a></p>
-                                        </li>
-                                        <li class="list-inline-item mb-1">
-                                            <span>LinkedIn:</span>
-                                            <p><a href="https://www.linkedin.com/in/shalev-lifshitz/">Let's Connect!</a></p>
-                                        </li>
-                                        <li class="list-inline-item mb-1">
-                                            <span>Twitter:</span>
-                                            <p><a href="https://twitter.com/Shalev_lif">@Shalev_lif</a></p>
-                                        </li>
-                                    </ul>
-                                </address>
-                                <a class="btn button-scheme" href="CV.pdf" role="button">View CV</a>
-                                <button type="button" class="btn button-outline details">More Details</button>
-                            </div>
+        </div>
+    </section>
+</header>
+<!-- About Area -->
+<section class="single-section about-area" id="about-area">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <div class="row align-items-center">
+                    <div class="col-12 col-lg-5">
+                        <img class="img-fluid img-thumbnail about-img" src="img/at_table_thin.jpg" alt="About Picture">
+                    </div>
+                    <div class="col-12 col-lg-7">
+                        <div class="content-block">
+                            <h2 class="about-title">About Me</h2>
+                            <h6 class="about-role">A Young AI Researcher and Entrepreneur</h6>
+                            <p class="about-description">I am an 19-year-old AI researcher and entrepreneur striving to
+                                develop the future of technology. I have spoken at
+                                various international conferences, inspiring many to think about the future of AI and
+                                explore which questions need to be asked to prepare for
+                                human-level artificial intelligence.</p>
+                            <p class="about-description second">I first fell in love with the field of AI since it was
+                                the bridge between both of my passions: the brain and technology.</p>
+                            <p class="about-description third">I have co-authored a paper with the University of
+                                Waterloo that attempts to <b>rethink the basic structure of Artificial Neural Networks
+                                    by taking more inspiration from the human brain</b>. I have also been creating
+                                algorithms that can <b>automatically detect structures in patient CT scans</b> at
+                                Claronav, a surgical navigation company. The algorithms I created are currently
+                                implemented in surgical navigation units around the globe. At the University of
+                                Waterloo, I have also created <b>a new histopathology image retrieval algorithm that can
+                                    help pathologists diagnose cancer and other diseases.</b></p>
+                            <p class="about-description last "><i>My goal? To spark the next wave of human innovation
+                                and help humanity reach a new evolutionary step.</i></p>
+                            <address>
+                                <ul class="list-inline about-info">
+                                    <li class="list-inline-item">
+                                        <span>Email:</span>
+                                        <p><a href="mailto:lifshitz.shalev@gmail.com">lifshitz.shalev@gmail.com</a></p>
+                                    </li>
+                                    <li class="list-inline-item mb-0">
+                                        <span>Youtube Channel:</span>
+                                        <p><a href="https://www.youtube.com/channel/UCj_PiE2tDScdXu9BQgDXD1A">Watch My
+                                            Talks</a></p>
+                                    </li>
+                                    <li class="list-inline-item mb-1">
+                                        <span>LinkedIn:</span>
+                                        <p><a href="https://www.linkedin.com/in/shalev-lifshitz/">Let's Connect!</a></p>
+                                    </li>
+                                    <li class="list-inline-item mb-1">
+                                        <span>Twitter:</span>
+                                        <p><a href="https://twitter.com/Shalev_lif">@Shalev_lif</a></p>
+                                    </li>
+                                </ul>
+                            </address>
+                            <a class="btn button-scheme" href="CV.pdf" role="button">View CV</a>
+                            <button type="button" class="btn button-outline details">More Details</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- Portfolio Area -->
-    <section class="single-section portfolio-area" id="portfolio-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="section-heading">
-                        <h2 class="section-title">My Portfolio</h2>
-                        <!-- <p class="section-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione!</p> -->
-                    </div>
+    </div>
+</section>
+<!-- Portfolio Area -->
+<section class="single-section portfolio-area" id="portfolio-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="section-heading">
+                    <h2 class="section-title">My Portfolio</h2>
+                    <!-- <p class="section-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione!</p> -->
                 </div>
             </div>
-            <div class="row">
-                <div class="col-12 p-0">
-                    <ul class="list-inline filter-control d-flex justify-content-center" role="group" aria-label="Filter Control">
-                        <li class="list-inline-item tab-active" data-group="all">All</li>
-                        <li class="list-inline-item" data-group="publications">Publications</li>
-                        <li class="list-inline-item" data-group="speaking-engagements">Speaking Engagements</li>
-                    </ul>
-                    <div class="shufflejs" id="shufflejs">
-                            <div class="js-item col-6 col-lg-4" data-groups='["publications"]'>
-                                <div class="item-overlay">
-                                    <img class="img-fluid" alt="Item" src="img/gramBarcodes_portfolio.jpg">
-                                    <div class="overlay-content">
-                                        <h6 class="overlay-title">Paper: Gram Barcodes for Histopathology Tissue Texture Retrieval</h6>
-                                        <div class="overlay-icons">
-                                            <a href="https://arxiv.org/abs/2111.15519">
-                                            <i class="icon ion-md-link"></i>
-                                        </a>
-                                        </div>
-                                    </div>
-                                </div>
-                          </div>
-                            <div class="js-item col-6 col-lg-4" data-groups='["speaking-engagements"]'>
-                                <div class="item-overlay">
-                                    <img class="img-fluid" alt="Item" src="img/fire_portfolio.jpg">
-                                    <div class="overlay-content">
-                                        <h6 class="overlay-title">Panel at FiRe 2019: The Future of Human-AI Interaction</h6>
-                                        <div class="overlay-icons">
-                                            <a href="https://www.youtube.com/watch?v=oqKTUfLkhYk">
-                                            <i class="icon ion-md-link"></i>
-                                        </a>
-                                        </div>
-                                    </div>
-                                </div>
-                          </div>
-                      <div class="js-item col-6 col-lg-4" data-groups='["publications"]'>
-                          <div class="item-overlay">
-                              <img class="img-fluid" alt="Item" src="img/subtractivePerceptron_portfolio.jpg">
-                              <div class="overlay-content">
-                                  <h6 class="overlay-title">Subtractive Perceptrons for Learning Images: A Preliminary Report (Paper Publication)</h6>
-                                  <div class="overlay-icons">
-                                      <!-- <a class="popup-item" href="img/ard_port.png" data-lity>
-                                      <i class="icon ion-md-eye"></i>
-                                  </a> -->
-                                      <a href="https://arxiv.org/abs/1909.12933">
-                                      <i class="icon ion-md-link"></i>
-                                  </a>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="js-item col-6 col-lg-4" data-groups='["speaking-engagements"]'>
-                          <div class="item-overlay">
-                              <img class="img-fluid" alt="Item" src="img/ifa_portfolio.jpg">
-                              <div class="overlay-content">
-                                  <h6 class="overlay-title">Talk at IFA: Humanity & AI: Preparing for an Intelligent Future</h6>
-                                  <div class="overlay-icons">
-                                      <!-- <a class="popup-item" href="img/ard_port.png" data-lity>
-                                      <i class="icon ion-md-eye"></i>
-                                  </a> -->
-                                      <a href="https://www.youtube.com/watch?v=v99e_8X1leI">
-                                      <i class="icon ion-md-link"></i>
-                                  </a>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="js-item col-6 col-lg-4" data-groups='["speaking-engagements"]'>
-                          <div class="item-overlay">
-                              <img class="img-fluid" alt="Item" src="img/intotomorrow_portfolio.jpg">
-                              <div class="overlay-content">
-                                  <h6 class="overlay-title">Shalev Lifshitz Interview on Into Tomorrow</h6>
-                                  <div class="overlay-icons">
-                                      <!-- <a class="popup-item" href="img/ard_port.png" data-lity>
-                                      <i class="icon ion-md-eye"></i>
-                                  </a> -->
-                                      <a href="https://www.youtube.com/watch?v=7DH0uAfkE7g">
-                                      <i class="icon ion-md-link"></i>
-                                  </a>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="js-item col-6 col-lg-4" data-groups='["speaking-engagements"]'>
-                          <div class="item-overlay">
-                              <img class="img-fluid" alt="Item" src="img/ard_portfolio.jpg">
-                              <div class="overlay-content">
-                                  <h6 class="overlay-title">Featured on ARD German National Television</h6>
-                                  <div class="overlay-icons">
-                                      <!-- <a class="popup-item" href="img/ard_port.png" data-lity>
-                                      <i class="icon ion-md-eye"></i>
-                                  </a> -->
-                                      <a href="https://www.youtube.com/watch?v=a_YTnGzq6Xc">
-                                      <i class="icon ion-md-link"></i>
-                                  </a>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                        <div class="js-item col-6 col-lg-4" data-groups='["speaking-engagements"]'>
-                            <div class="item-overlay">
-                                <img class="img-fluid" alt="Item" src="img/sxsw_portfolio.jpg">
-                                <div class="overlay-content">
-                                    <h6 class="overlay-title">Talk at SXSW: Reforming Civilization with AI</h6>
-                                    <div class="overlay-icons">
-                                        <!-- <a class="popup-item" href="img/sxsw_portfolio.png" data-lity>
-                                        <i class="icon ion-md-eye"></i>
-                                    </a> -->
-                                        <a href="https://www.youtube.com/watch?v=7-eWb3e4Oq4">
+        </div>
+        <div class="row">
+            <div class="col-12 p-0">
+                <ul class="list-inline filter-control d-flex justify-content-center" role="group"
+                    aria-label="Filter Control">
+                    <li class="list-inline-item tab-active" data-group="all">All</li>
+                    <li class="list-inline-item" data-group="publications">Publications</li>
+                    <li class="list-inline-item" data-group="speaking-engagements">Speaking Engagements</li>
+                </ul>
+                <div class="shufflejs" id="shufflejs">
+                    <div class="js-item col-6 col-lg-4" data-groups='["publications"]'>
+                        <div class="item-overlay">
+                            <img class="img-fluid" alt="Item" src="img/gramBarcodes_portfolio.jpg">
+                            <div class="overlay-content">
+                                <h6 class="overlay-title">Paper: Gram Barcodes for Histopathology Tissue Texture
+                                    Retrieval</h6>
+                                <div class="overlay-icons">
+                                    <a href="https://arxiv.org/abs/2111.15519">
                                         <i class="icon ion-md-link"></i>
                                     </a>
-                                    </div>
                                 </div>
                             </div>
                         </div>
-<!--                        <div class="js-item col-6 col-lg-4" data-groups='["speaking-engagements"]'>-->
-<!--                            <div class="item-overlay">-->
-<!--                                <img class="img-fluid" alt="Item" src="img/dailyplanet_portfolio.jpg">-->
-<!--                                <div class="overlay-content">-->
-<!--                                    <h6 class="overlay-title">Daily Planet Feature - Discovery Channel</h6>-->
-<!--                                    <div class="overlay-icons">-->
-<!--                                        &lt;!&ndash; <a class="popup-item" href="img/dailyplanet_portfolio.jpg" data-lity>-->
-<!--                                        <i class="icon ion-md-eye"></i>-->
-<!--                                    </a> &ndash;&gt;-->
-<!--                                        <a href="https://www.youtube.com/watch?v=dgrHqd17jn0">-->
-<!--                                        <i class="icon ion-md-link"></i>-->
-<!--                                    </a>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                            </div>-->
-                        </div>
-                        <div class="col-6 col-lg-4 sizer-element"></div>
                     </div>
+                    <div class="js-item col-6 col-lg-4" data-groups='["speaking-engagements"]'>
+                        <div class="item-overlay">
+                            <img class="img-fluid" alt="Item" src="img/fire_portfolio.jpg">
+                            <div class="overlay-content">
+                                <h6 class="overlay-title">Panel at FiRe 2019: The Future of Human-AI Interaction</h6>
+                                <div class="overlay-icons">
+                                    <a href="https://www.youtube.com/watch?v=oqKTUfLkhYk">
+                                        <i class="icon ion-md-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="js-item col-6 col-lg-4" data-groups='["publications"]'>
+                        <div class="item-overlay">
+                            <img class="img-fluid" alt="Item" src="img/subtractivePerceptron_portfolio.jpg">
+                            <div class="overlay-content">
+                                <h6 class="overlay-title">Subtractive Perceptrons for Learning Images: A Preliminary
+                                    Report (Paper Publication)</h6>
+                                <div class="overlay-icons">
+                                    <!-- <a class="popup-item" href="img/ard_port.png" data-lity>
+                                    <i class="icon ion-md-eye"></i>
+                                </a> -->
+                                    <a href="https://arxiv.org/abs/1909.12933">
+                                        <i class="icon ion-md-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="js-item col-6 col-lg-4" data-groups='["speaking-engagements"]'>
+                        <div class="item-overlay">
+                            <img class="img-fluid" alt="Item" src="img/ifa_portfolio.jpg">
+                            <div class="overlay-content">
+                                <h6 class="overlay-title">Talk at IFA: Humanity & AI: Preparing for an Intelligent
+                                    Future</h6>
+                                <div class="overlay-icons">
+                                    <!-- <a class="popup-item" href="img/ard_port.png" data-lity>
+                                    <i class="icon ion-md-eye"></i>
+                                </a> -->
+                                    <a href="https://www.youtube.com/watch?v=v99e_8X1leI">
+                                        <i class="icon ion-md-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="js-item col-6 col-lg-4" data-groups='["speaking-engagements"]'>
+                        <div class="item-overlay">
+                            <img class="img-fluid" alt="Item" src="img/intotomorrow_portfolio.jpg">
+                            <div class="overlay-content">
+                                <h6 class="overlay-title">Shalev Lifshitz Interview on Into Tomorrow</h6>
+                                <div class="overlay-icons">
+                                    <!-- <a class="popup-item" href="img/ard_port.png" data-lity>
+                                    <i class="icon ion-md-eye"></i>
+                                </a> -->
+                                    <a href="https://www.youtube.com/watch?v=7DH0uAfkE7g">
+                                        <i class="icon ion-md-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="js-item col-6 col-lg-4" data-groups='["speaking-engagements"]'>
+                        <div class="item-overlay">
+                            <img class="img-fluid" alt="Item" src="img/ard_portfolio.jpg">
+                            <div class="overlay-content">
+                                <h6 class="overlay-title">Featured on ARD German National Television</h6>
+                                <div class="overlay-icons">
+                                    <!-- <a class="popup-item" href="img/ard_port.png" data-lity>
+                                    <i class="icon ion-md-eye"></i>
+                                </a> -->
+                                    <a href="https://www.youtube.com/watch?v=a_YTnGzq6Xc">
+                                        <i class="icon ion-md-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="js-item col-6 col-lg-4" data-groups='["speaking-engagements"]'>
+                        <div class="item-overlay">
+                            <img class="img-fluid" alt="Item" src="img/sxsw_portfolio.jpg">
+                            <div class="overlay-content">
+                                <h6 class="overlay-title">Talk at SXSW: Reforming Civilization with AI</h6>
+                                <div class="overlay-icons">
+                                    <!-- <a class="popup-item" href="img/sxsw_portfolio.png" data-lity>
+                                    <i class="icon ion-md-eye"></i>
+                                </a> -->
+                                    <a href="https://www.youtube.com/watch?v=7-eWb3e4Oq4">
+                                        <i class="icon ion-md-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--                        <div class="js-item col-6 col-lg-4" data-groups='["speaking-engagements"]'>-->
+                    <!--                            <div class="item-overlay">-->
+                    <!--                                <img class="img-fluid" alt="Item" src="img/dailyplanet_portfolio.jpg">-->
+                    <!--                                <div class="overlay-content">-->
+                    <!--                                    <h6 class="overlay-title">Daily Planet Feature - Discovery Channel</h6>-->
+                    <!--                                    <div class="overlay-icons">-->
+                    <!--                                        &lt;!&ndash; <a class="popup-item" href="img/dailyplanet_portfolio.jpg" data-lity>-->
+                    <!--                                        <i class="icon ion-md-eye"></i>-->
+                    <!--                                    </a> &ndash;&gt;-->
+                    <!--                                        <a href="https://www.youtube.com/watch?v=dgrHqd17jn0">-->
+                    <!--                                        <i class="icon ion-md-link"></i>-->
+                    <!--                                    </a>-->
+                    <!--                                    </div>-->
+                    <!--                                </div>-->
+                    <!--                            </div>-->
+                </div>
+                <div class="col-6 col-lg-4 sizer-element"></div>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+<!-- Blog Area -->
+<section class="single-section blog-area" id="blog-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="section-heading">
+                    <h2 class="section-title">Recent Newsletters</h2>
+                    <p class="section-description">Subscribe to keep updated with my research, ventures, and more! <b>Click
+                        on my image icon to see all past issues.</b></p>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- Blog Area -->
-    <section class="single-section blog-area" id="blog-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="section-heading">
-                        <h2 class="section-title">Recent Newsletters</h2>
-                        <p class="section-description">Subscribe to keep updated with my research, ventures, and more! <b>Click on my image icon to see all past issues.</b></p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-              <div class="col-12 col-lg-4">
-                  <div class="card">
-                      <a href="https://www.getrevue.co/profile/Shalev/issues/shalev-lifshitz-newsletter-update-230554">
+        <div class="row">
+            <div class="col-12 col-lg-4">
+                <div class="card">
+                    <a href="https://www.getrevue.co/profile/Shalev/issues/shalev-lifshitz-newsletter-update-230554">
                         <img class="card-img-top" src="img/2020_newsletter_reshape.jpg" alt="Card image cap">
                     </a>
-                      <div class="card-body">
-                          <a href="https://www.getrevue.co/profile/Shalev/issues/shalev-lifshitz-newsletter-update-230554">
-                              <h5 class="card-title">2020 Newsletter</h5>
-                          </a>
-                          <p class="card-text">Working at a surgical navigation company in Toronto, creating a new image search algorithm for cancer diagnosis, and starting a new chapter at the University of Toronto!</p>
-                          <div class="media post-summary">
-                              <a class="align-self-center" href="https://www.getrevue.co/profile/Shalev?utm_campaign=Issue&utm_content=profileimage&utm_medium=email&utm_source=Shalev+Lifshitz+-+Newsletter+">
-                            <img src="img/sidebar-avatar.jpg" alt="Author" class="img-fluid rounded-circle author-avatar">
+                    <div class="card-body">
+                        <a href="https://www.getrevue.co/profile/Shalev/issues/shalev-lifshitz-newsletter-update-230554">
+                            <h5 class="card-title">2020 Newsletter</h5>
                         </a>
-                              <div class="media-body align-self-center">
-                                  <a href="https://www.getrevue.co/profile/Shalev?utm_campaign=Issue&utm_content=profileimage&utm_medium=email&utm_source=Shalev+Lifshitz+-+Newsletter+">
-                                      <h6 class="author-name">Shalev Lifshitz</h6>
-                                  </a>
-                                  <span class="post-date">19 Oct 2020</span>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="col-12 col-lg-4">
-                  <div class="card">
-                      <a href="https://www.getrevue.co/profile/Shalev/issues/shalev-lifshitz-summer-newsletter-197386">
+                        <p class="card-text">Working at a surgical navigation company in Toronto, creating a new image
+                            search algorithm for cancer diagnosis, and starting a new chapter at the University of
+                            Toronto!</p>
+                        <div class="media post-summary">
+                            <a class="align-self-center"
+                               href="https://www.getrevue.co/profile/Shalev?utm_campaign=Issue&utm_content=profileimage&utm_medium=email&utm_source=Shalev+Lifshitz+-+Newsletter+">
+                                <img src="img/sidebar-avatar.jpg" alt="Author"
+                                     class="img-fluid rounded-circle author-avatar">
+                            </a>
+                            <div class="media-body align-self-center">
+                                <a href="https://www.getrevue.co/profile/Shalev?utm_campaign=Issue&utm_content=profileimage&utm_medium=email&utm_source=Shalev+Lifshitz+-+Newsletter+">
+                                    <h6 class="author-name">Shalev Lifshitz</h6>
+                                </a>
+                                <span class="post-date">19 Oct 2020</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4">
+                <div class="card">
+                    <a href="https://www.getrevue.co/profile/Shalev/issues/shalev-lifshitz-summer-newsletter-197386">
                         <img class="card-img-top" src="img/summer_newsletter.jpg" alt="Card image cap">
                     </a>
-                      <div class="card-body">
-                          <a href="https://www.getrevue.co/profile/Shalev/issues/shalev-lifshitz-summer-newsletter-197386">
-                              <h5 class="card-title">2019 Summer Newsletter</h5>
-                          </a>
-                          <p class="card-text">Speaking in Berlin, Prague, and Frankfurt and my new paper publication creating brain-like Neural Networks!</p>
-                          <div class="media post-summary">
-                              <a class="align-self-center" href="https://www.getrevue.co/profile/Shalev?utm_campaign=Issue&utm_content=profileimage&utm_medium=email&utm_source=Shalev+Lifshitz+-+Newsletter+">
-                            <img src="img/sidebar-avatar.jpg" alt="Author" class="img-fluid rounded-circle author-avatar">
+                    <div class="card-body">
+                        <a href="https://www.getrevue.co/profile/Shalev/issues/shalev-lifshitz-summer-newsletter-197386">
+                            <h5 class="card-title">2019 Summer Newsletter</h5>
                         </a>
-                              <div class="media-body align-self-center">
-                                  <a href="https://www.getrevue.co/profile/Shalev?utm_campaign=Issue&utm_content=profileimage&utm_medium=email&utm_source=Shalev+Lifshitz+-+Newsletter+">
-                                      <h6 class="author-name">Shalev Lifshitz</h6>
-                                  </a>
-                                  <span class="post-date">7 Oct 2019</span>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="col-12 col-lg-4">
-                  <div class="card">
-                      <a href="https://www.getrevue.co/profile/Shalev/issues/shalev-lifshitz-spring-newsletter-186933">
+                        <p class="card-text">Speaking in Berlin, Prague, and Frankfurt and my new paper publication
+                            creating brain-like Neural Networks!</p>
+                        <div class="media post-summary">
+                            <a class="align-self-center"
+                               href="https://www.getrevue.co/profile/Shalev?utm_campaign=Issue&utm_content=profileimage&utm_medium=email&utm_source=Shalev+Lifshitz+-+Newsletter+">
+                                <img src="img/sidebar-avatar.jpg" alt="Author"
+                                     class="img-fluid rounded-circle author-avatar">
+                            </a>
+                            <div class="media-body align-self-center">
+                                <a href="https://www.getrevue.co/profile/Shalev?utm_campaign=Issue&utm_content=profileimage&utm_medium=email&utm_source=Shalev+Lifshitz+-+Newsletter+">
+                                    <h6 class="author-name">Shalev Lifshitz</h6>
+                                </a>
+                                <span class="post-date">7 Oct 2019</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4">
+                <div class="card">
+                    <a href="https://www.getrevue.co/profile/Shalev/issues/shalev-lifshitz-spring-newsletter-186933">
                         <img class="card-img-top" src="img/meConvention_newsletter.jpg" alt="Card image cap">
                     </a>
-                      <div class="card-body">
-                          <a href="https://www.getrevue.co/profile/Shalev/issues/shalev-lifshitz-spring-newsletter-186933">
-                              <h5 class="card-title">2019 Spring Newsletter</h5>
-                          </a>
-                          <p class="card-text">Speaking at Microsoft and OMS, working at Kimia Lab in the summer, and set to speak at me Convention in Frankfurt, Germany!</p>
-                          <div class="media post-summary">
-                              <a class="align-self-center" href="https://www.getrevue.co/profile/Shalev?utm_campaign=Issue&utm_content=profileimage&utm_medium=email&utm_source=Shalev+Lifshitz+-+Newsletter+">
-                            <img src="img/sidebar-avatar.jpg" alt="Author" class="img-fluid rounded-circle author-avatar">
+                    <div class="card-body">
+                        <a href="https://www.getrevue.co/profile/Shalev/issues/shalev-lifshitz-spring-newsletter-186933">
+                            <h5 class="card-title">2019 Spring Newsletter</h5>
                         </a>
-                              <div class="media-body align-self-center">
-                                  <a href="https://www.getrevue.co/profile/Shalev?utm_campaign=Issue&utm_content=profileimage&utm_medium=email&utm_source=Shalev+Lifshitz+-+Newsletter+">
-                                      <h6 class="author-name">Shalev Lifshitz</h6>
-                                  </a>
-                                  <span class="post-date">21 Jul 2019</span>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-<!--              <div class="col-12 col-lg-4">-->
-<!--                  <div class="card">-->
-<!--                      <a href="https://www.getrevue.co/profile/Shalev/issues/shalev-lifshitz-february-march-newsletter-163729">-->
-<!--                        <img class="card-img-top" src="img/sxsw_talk_newsletter.png" alt="Card image cap">-->
-<!--                    </a>-->
-<!--                      <div class="card-body">-->
-<!--                          <a href="https://www.getrevue.co/profile/Shalev/issues/shalev-lifshitz-february-march-newsletter-163729">-->
-<!--                              <h5 class="card-title">February & March Newsletter</h5>-->
-<!--                          </a>-->
-<!--                          <p class="card-text">Speaking about the future of AI at South by Southwest, interviewed by Germany's Largest Television Broadcaster, and my new personal website (which you probably know about)!</p>-->
-<!--                          <div class="media post-summary">-->
-<!--                              <a class="align-self-center" href="https://www.getrevue.co/profile/Shalev?utm_campaign=Issue&utm_content=profileimage&utm_medium=email&utm_source=Shalev+Lifshitz+-+Newsletter+">-->
-<!--                            <img src="img/sidebar-avatar.jpg" alt="Author" class="img-fluid rounded-circle author-avatar">-->
-<!--                        </a>-->
-<!--                              <div class="media-body align-self-center">-->
-<!--                                  <a href="https://www.getrevue.co/profile/Shalev?utm_campaign=Issue&utm_content=profileimage&utm_medium=email&utm_source=Shalev+Lifshitz+-+Newsletter+">-->
-<!--                                      <h6 class="author-name">Shalev Lifshitz</h6>-->
-<!--                                  </a>-->
-<!--                                  <span class="post-date">31 Mar 2019</span>-->
-<!--                              </div>-->
-<!--                          </div>-->
-<!--                      </div>-->
-<!--                  </div>-->
-<!--              </div>-->
-            </div>
-        </div>
-    </section>
-    <!-- Footer Area -->
-    <footer class="footer-area single-section">
-        <div class="container">
-            <div class="row main-footer">
-                <div class="col-12 col-md-3">
-                    <h5 class="column-title">Menu</h5>
-                    <ul class="list-unstyled column-content">
-                        <li><a data-scroll href="#header-area">Home</a></li>
-                        <li><a data-scroll href="#about-area">About Me</a></li>
-                        <li><a data-scroll href="#portfolio-area">My Portfolio</a></li>
-                        <li><a data-scroll href="#blog-area">Monthly Newsletter</a></li>
-                        <!-- <li><a data-scroll href="#contact-area">Get in Touch!</a></li> -->
-                    </ul>
-                </div>
-                <div class="col-12 col-md-3">
-                    <!-- <h5 class="column-title">Information</h5>
-                    <ul class="list-unstyled column-content">
-                        <li><a href="#0">Terms & Condition</a></li>
-                        <li><a href="#0">Privacy Policy</a></li>
-                        <li><a href="#0">Jobs</a></li>
-                        <li><a href="#0">Partners</a></li>
-                    </ul> -->
-                </div>
-                <div class="col-12 col-md-3">
-                    <!-- <h5 class="column-title">Support</h5>
-                    <ul class="list-unstyled column-content">
-                        <li><a href="#0">Contact Us</a></li>
-                        <li><a href="#0">FAQs</a></li>
-                        <li><a href="#0">Report an issue</a></li>
-                    </ul> -->
-                </div>
-                <div class="col-12 col-md-3">
-                    <h2 class="brand-logo">Shalev Lifshitz</h2>
-                    <p class="brand-description">A Young AI Researcher and Entrepreneur.</p>
-                </div>
-            </div>
-            <div class="row mini-footer">
-                <div class="col-12">
-                    <div class="social-medias">
-                        <a class="twitter" href="https://twitter.com/Shalev_lif">
-                            <i class="icon ion-logo-twitter"></i>
-                        </a>
-                        <a class="linkedin" href="https://www.linkedin.com/in/shalev-lifshitz/">
-                            <i class="icon ion-logo-linkedin"></i>
-                        </a>
-                        <a class="youtube" href="https://www.youtube.com/channel/UCj_PiE2tDScdXu9BQgDXD1A">
-                            <i class="icon ion-logo-youtube"></i>
-                        </a>
-                        <a class="github" href="https://github.com/Shalev-Lifshitz">
-                            <i class="icon ion-logo-github"></i>
-                        </a>
-                        <a class="facebook" href="https://www.facebook.com/shalev.lifshitz.7">
-                            <i class="icon ion-logo-facebook"></i>
+                        <p class="card-text">Speaking at Microsoft and OMS, working at Kimia Lab in the summer, and set
+                            to speak at me Convention in Frankfurt, Germany!</p>
+                        <div class="media post-summary">
+                            <a class="align-self-center"
+                               href="https://www.getrevue.co/profile/Shalev?utm_campaign=Issue&utm_content=profileimage&utm_medium=email&utm_source=Shalev+Lifshitz+-+Newsletter+">
+                                <img src="img/sidebar-avatar.jpg" alt="Author"
+                                     class="img-fluid rounded-circle author-avatar">
+                            </a>
+                            <div class="media-body align-self-center">
+                                <a href="https://www.getrevue.co/profile/Shalev?utm_campaign=Issue&utm_content=profileimage&utm_medium=email&utm_source=Shalev+Lifshitz+-+Newsletter+">
+                                    <h6 class="author-name">Shalev Lifshitz</h6>
+                                </a>
+                                <span class="post-date">21 Jul 2019</span>
+                            </div>
+                        </div>
                     </div>
-                    <!-- <p class="copyright-notice">Copyright © 2018 Flexi, all rights reserved. Developed by <a href="https://themeforest.net/user/exill" target="_blank">Exill</a>.</p> -->
                 </div>
             </div>
+            <!--              <div class="col-12 col-lg-4">-->
+            <!--                  <div class="card">-->
+            <!--                      <a href="https://www.getrevue.co/profile/Shalev/issues/shalev-lifshitz-february-march-newsletter-163729">-->
+            <!--                        <img class="card-img-top" src="img/sxsw_talk_newsletter.png" alt="Card image cap">-->
+            <!--                    </a>-->
+            <!--                      <div class="card-body">-->
+            <!--                          <a href="https://www.getrevue.co/profile/Shalev/issues/shalev-lifshitz-february-march-newsletter-163729">-->
+            <!--                              <h5 class="card-title">February & March Newsletter</h5>-->
+            <!--                          </a>-->
+            <!--                          <p class="card-text">Speaking about the future of AI at South by Southwest, interviewed by Germany's Largest Television Broadcaster, and my new personal website (which you probably know about)!</p>-->
+            <!--                          <div class="media post-summary">-->
+            <!--                              <a class="align-self-center" href="https://www.getrevue.co/profile/Shalev?utm_campaign=Issue&utm_content=profileimage&utm_medium=email&utm_source=Shalev+Lifshitz+-+Newsletter+">-->
+            <!--                            <img src="img/sidebar-avatar.jpg" alt="Author" class="img-fluid rounded-circle author-avatar">-->
+            <!--                        </a>-->
+            <!--                              <div class="media-body align-self-center">-->
+            <!--                                  <a href="https://www.getrevue.co/profile/Shalev?utm_campaign=Issue&utm_content=profileimage&utm_medium=email&utm_source=Shalev+Lifshitz+-+Newsletter+">-->
+            <!--                                      <h6 class="author-name">Shalev Lifshitz</h6>-->
+            <!--                                  </a>-->
+            <!--                                  <span class="post-date">31 Mar 2019</span>-->
+            <!--                              </div>-->
+            <!--                          </div>-->
+            <!--                      </div>-->
+            <!--                  </div>-->
+            <!--              </div>-->
         </div>
-    </footer>
-    <!-- JS Assets -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/jquery.nav.min.js"></script>
-    <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=Set,Array.from,Object.assign,Array.prototype.find,Array.prototype.includes"></script>
-    <script src="js/shuffle.min.js"></script>
-    <script src="js/lity.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/particles.js"></script>
-    <script src="js/variants/particles.js"></script>
+    </div>
+</section>
+<!-- Footer Area -->
+<footer class="footer-area single-section">
+    <div class="container">
+        <div class="row main-footer">
+            <div class="col-12 col-md-3">
+                <h5 class="column-title">Menu</h5>
+                <ul class="list-unstyled column-content">
+                    <li><a data-scroll href="#header-area">Home</a></li>
+                    <li><a data-scroll href="#about-area">About Me</a></li>
+                    <li><a data-scroll href="#portfolio-area">My Portfolio</a></li>
+                    <li><a data-scroll href="#blog-area">Monthly Newsletter</a></li>
+                    <!-- <li><a data-scroll href="#contact-area">Get in Touch!</a></li> -->
+                </ul>
+            </div>
+            <div class="col-12 col-md-3">
+                <!-- <h5 class="column-title">Information</h5>
+                <ul class="list-unstyled column-content">
+                    <li><a href="#0">Terms & Condition</a></li>
+                    <li><a href="#0">Privacy Policy</a></li>
+                    <li><a href="#0">Jobs</a></li>
+                    <li><a href="#0">Partners</a></li>
+                </ul> -->
+            </div>
+            <div class="col-12 col-md-3">
+                <!-- <h5 class="column-title">Support</h5>
+                <ul class="list-unstyled column-content">
+                    <li><a href="#0">Contact Us</a></li>
+                    <li><a href="#0">FAQs</a></li>
+                    <li><a href="#0">Report an issue</a></li>
+                </ul> -->
+            </div>
+            <div class="col-12 col-md-3">
+                <h2 class="brand-logo">Shalev Lifshitz</h2>
+                <p class="brand-description">A Young AI Researcher and Entrepreneur.</p>
+            </div>
+        </div>
+        <div class="row mini-footer">
+            <div class="col-12">
+                <div class="social-medias">
+                    <a class="twitter" href="https://twitter.com/Shalev_lif">
+                        <i class="icon ion-logo-twitter"></i>
+                    </a>
+                    <a class="linkedin" href="https://www.linkedin.com/in/shalev-lifshitz/">
+                        <i class="icon ion-logo-linkedin"></i>
+                    </a>
+                    <a class="youtube" href="https://www.youtube.com/channel/UCj_PiE2tDScdXu9BQgDXD1A">
+                        <i class="icon ion-logo-youtube"></i>
+                    </a>
+                    <a class="github" href="https://github.com/Shalev-Lifshitz">
+                        <i class="icon ion-logo-github"></i>
+                    </a>
+                    <a class="facebook" href="https://www.facebook.com/shalev.lifshitz.7">
+                        <i class="icon ion-logo-facebook"></i>
+                </div>
+                <!-- <p class="copyright-notice">Copyright © 2018 Flexi, all rights reserved. Developed by <a href="https://themeforest.net/user/exill" target="_blank">Exill</a>.</p> -->
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- JS Assets -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/jquery.nav.min.js"></script>
+<script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=Set,Array.from,Object.assign,Array.prototype.find,Array.prototype.includes"></script>
+<script src="js/shuffle.min.js"></script>
+<script src="js/lity.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/particles.js"></script>
+<script src="js/variants/particles.js"></script>
 </body>
 
 </html>
