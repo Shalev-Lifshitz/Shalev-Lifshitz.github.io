@@ -531,7 +531,7 @@ a:hover, a:focus {
 =            Header Area            =
 ===================================*/
 .header-area {
-  background-image: url(../img/header-area.jpg);
+  background-image: url(../paper-imgs/header-area.jpg);
   background-position: 65% 0;
   height: 100vh;
   color: #fff;
