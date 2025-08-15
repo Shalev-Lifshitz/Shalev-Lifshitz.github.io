@@ -1,24 +1,14 @@
-<!doctype html>
-<html lang="zxx">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <!-- Title -->
-    <title>
-        Shalev Lifshitz's Personal Website
-    </title>
-    <!-- Description -->
-    <meta name="description" content="Shalev Lifshitz's Personal Website">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Favicons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shalev Lifshitz - Simple Structure</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Exo+2:400%7CPoppins:300,400,500,600,700%7CRaleway:300,400,500,600,700,800" rel="stylesheet">
     <!-- CSS Assets -->
     <link rel="stylesheet" href="css/bootstrap-custom.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Exo+2:400%7CPoppins:300,400,500,600,700%7CRaleway:300,400,500,600,700,800"
-          rel="stylesheet">
     <link rel="stylesheet" href="css/ionicons.min.css">
     <link rel="stylesheet" href="css/hamburgers-custom.min.css">
     <link rel="stylesheet" href="css/lity.min.css">
@@ -27,55 +17,435 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/colors/main-blue.css" id="color-scheme">
     <link rel="stylesheet" href="css/variants/particles.css">
-</head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.9;
+            color: #222;
+            background: white;
+            overflow-x: hidden;
+            font-size: 14px;
+            font-weight: 300;
+        }
+        
+        .container {
+            max-width: 1320px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .content-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .research-talks-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            margin-bottom: 10px;
+        }
+        
+        .about-content {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+        
+        .about-image {
+            width: 430px;
+            flex-shrink: 0;
+        }
+        
+        .about-image img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        
+        .about-text p {
+            margin-bottom: 15px;
+            font-size: 14px;
+            line-height: 1.9;
+            font-weight: 300;
+            color: #222;
+        }
+        
+        .paper {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 20px;
+            align-items: flex-start;
+            flex-wrap: nowrap;
+        }
+        
+        .paper-image {
+            width: 120px;
+            height: 96px;
+            flex-shrink: 0;
+            min-width: 120px;
+            min-height: 96px;
+            max-width: 120px;
+            max-height: 96px;
+        }
+        
+        .paper-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 4px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+        }
+        
+        .paper-info h3 {
+            font-size: 1.3em;
+            margin-bottom: 5px;
+            color: #222;
+        }
+        
+        .paper-info h3 a {
+            color: #222;
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+        
+        .paper-info h3 a:hover {
+            color: #007bff;
+        }
+        
+        .paper-authors {
+            font-size: 1.1em;
+            color: #222;
+            margin-bottom: 3px;
+        }
+        
+        .paper-authors strong {
+            color: #007bff;
+        }
+        
+        .paper-venue {
+            font-size: 1.1em;
+            color: #222;
+            font-style: italic;
+        }
+        
+        .spotlight {
+            color: #dc3545;
+            font-weight: bold;
+            font-size: 0.9em;
+            background: rgba(220, 53, 69, 0.1);
+            padding: 4px 12px;
+            border-radius: 20px;
+            display: inline-block;
+            border: 1px solid rgba(220, 53, 69, 0.3);
+        }
+        
+        h2 {
+            font-family: "Raleway", sans-serif;
+            font-weight: 800;
+            margin-bottom: 30px;
+            color: #222;
+            font-size: 33px;
+        }
+        
+        /* Add more spacing between sections */
+        #about {
+            margin-top: 60px;
+            margin-bottom: 80px;
+        }
+        
+        .about-title {
+            font-family: "Raleway", sans-serif;
+            font-weight: 800;
+            margin-bottom: 12px;
+            font-size: 33px;
+            color: #222;
+        }
+        
+        .about-role {
+            font-family: "Raleway", sans-serif;
+            font-weight: 600;
+            font-size: 18px;
+            margin-bottom: 25px;
+            color: #222;
+        }
+        
+        #research {
+            margin-bottom: 20px;
+        }
+        
+        #talks {
+            margin-top: 40px;
+            margin-bottom: 10px;
+        }
+        
+        .talks-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+        
+        .talk-item {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .talk-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+        }
+        
+        .talk-link {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+        
+        .talk-thumbnail {
+            position: relative;
+            width: 100%;
+            height: 180px;
+            overflow: hidden;
+        }
+        
+        .talk-thumbnail img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        
+        .talk-item:hover .talk-thumbnail img {
+            transform: scale(1.05);
+        }
+        
+        .play-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .talk-item:hover .play-overlay {
+            opacity: 1;
+        }
+        
+        .talk-info {
+            padding: 20px;
+        }
+        
+        .talk-info h3 {
+            font-size: 1.4em;
+            margin-bottom: 8px;
+            color: #333;
+            font-weight: 500;
+        }
+        
+        .talk-info p {
+            color: #666;
+            font-size: 1.1em;
+            line-height: 1.4;
+        }
+        
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        
+        .footer-left {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        
+        .footer-name {
+            font-family: "Raleway", sans-serif;
+            font-size: 2.5em;
+            font-weight: 800;
+            color: #222;
+            margin-bottom: 10px;
+            line-height: 1;
+        }
+        
+        .copyright p {
+            margin: 0;
+            color: #666;
+            font-size: 1em;
+        }
+        
+        .social-icons {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .social-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            color: #333;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-size: 32px;
+        }
+        
+        .social-icon:hover {
+            color: #007bff;
+            transform: translateY(-2px);
+        }
+        
+        .featured-video {
+            margin-bottom: 40px;
+            text-align: center;
+        }
 
+        .featured-video h3 {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            overflow: hidden;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .more-talks-button {
+            text-align: center;
+            margin-top: 10px;
+            padding: 20px;
+        }
+        
+        .more-publications-button {
+            text-align: center;
+            margin-top: 0;
+            padding: 20px;
+        }
+        
+        .more-talks-link {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #333;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 1.3em;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            border: 2px solid #333;
+        }
+        
+        .more-talks-link:hover {
+            background: transparent;
+            border-color: #333;
+            color: #333;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+        
+        .more-publications-link {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #333;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 1.3em;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            border: 2px solid #333;
+        }
+        
+        .more-publications-link:hover {
+            background: transparent;
+            border-color: #333;
+            color: #333;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+        
+        @media (max-width: 768px) {
+            .about-content {
+                flex-direction: column;
+            }
+            
+            .about-image {
+                width: 320px;
+                margin: 0 auto;
+            }
+            
+            .talks-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .paper {
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            .paper-image {
+                width: 100px;
+                height: 80px;
+                margin: 0 auto;
+            }
+            
+            .footer-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .social-icons {
+                justify-content: center;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .paper-image {
+                width: 80px;
+                height: 64px;
+                min-width: 80px;
+                min-height: 64px;
+            }
+        }
+    </style>
+</head>
 <body>
-<!-- Preloader -->
-<div class="preloader">
-    <div class="preloader-section preloader-right">
-    </div>
-    <div class="preloader-section preloader-left">
-    </div>
-    <div class="preloader-icon">
-        <span class="loading-dot loading-dot-1"></span>
-        <span class="loading-dot loading-dot-2"></span>
-        <span class="loading-dot loading-dot-3"></span>
-    </div>
-</div>
-<header>
-    <!-- Navbar Area -->
-    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand" data-scroll href="#header-area">Shalev Lifshitz</a>
-            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                <span class="nav-btn">Menu</span>
-            </button>
-            <!-- <div class="d-flex flex-row  order-0 order-lg-1">
-                <div class="navbar-nav flex-row">
-                    <button id="navBtn" class="hamburger hamburger--slider" type="button">
-                            <span class="hamburger-box">
-                        <span class="hamburger-inner"></span>
-                            </span>
-                    </button>
-                </div>
-            </div> -->
-            <div id="navbarSupportedContent" class="collapse navbar-collapse order-1 order-lg-0">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#header-area">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about-area">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#portfolio-area">Portfolio</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
     <!-- Header Area (Home) -->
     <section class="header-area section-fixed-bg section-overlay-bg" id="header-area">
         <div id="particles-js"></div>
@@ -84,23 +454,14 @@
                 <div class="col-12 col-lg-8 home-content text-center">
                     <h5 class="greet">Hello, my name is <b>Shalev Lifshitz.</b></h5>
                     <h1 class="skills cd-headline clip">
-                            <!-- <span class="cd-words-wrapper single-skill"> -->
-                             <b class="is-visible">AI Researcher & Engineer</b>
-                             <!-- <b>Engineer</b> -->
-                             <!-- <b>Futurist</b> -->
-                          <!-- </span> -->
+                        <b class="is-visible">AI Researcher & Engineer</b>
                     </h1>
-                    <p class="description">Striving to develop the future of technology. My
-                        goal is to help spark the next wave of human innovation and help humanity reach a new evolutionary
-                        step.</p>
-                    <!-- <a class="btn work" data-scroll href="#portfolio-area" role="button">Portfolio</a> -->
-                    <a class="btn work" data-scroll href="https://scholar.google.ca/citations?user=brwVM08AAAAJ&hl=en&oi=ao"
-                       role="button">Google Scholar</a>
-                    <a class="btn hire button-scheme" data-scroll href="https://twitter.com/Shalev_lif"
-                       role="button">Twitter/X</a>
+                    <p class="description">Striving to develop the future of technology. My goal is to help spark the next wave of human innovation and help humanity reach a new evolutionary step.</p>
+                    <a class="btn work" href="https://scholar.google.ca/citations?user=brwVM08AAAAJ&hl=en&oi=ao" target="_blank" role="button">Google Scholar</a>
+                    <a class="btn hire button-scheme" href="https://twitter.com/Shalev_lif" target="_blank" role="button">Twitter/X</a>
                 </div>
                 <div class="scroll-icon">
-                    <a data-scroll href="#about-area">
+                    <a href="#about">
                         <div class="mouse">
                             <div class="wheel"></div>
                         </div>
@@ -109,272 +470,194 @@
             </div>
         </div>
     </section>
-</header>
-<!-- About Area -->
-<section class="single-section about-area" id="about-area">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-12">
-                <div class="row align-items-center">
-                    <div class="col-12 col-lg-5">
-                        <img class="img-fluid img-thumbnail about-img" src="img/at_table_thin.jpg" alt="About Picture">
-                    </div>
-                    <div class="col-12 col-lg-7">
-                        <div class="content-block">
-                            <h2 class="about-title">About Me</h2>
-                            <h6 class="about-role">An AI Researcher and Engineer</h6>
-                            <p class="about-description">
-                                I'm an AI researcher and engineer striving to develop the future of technology. 
-                                With over 6 years of AI experience in research and industry, I'm currently developing generalist agents with Prof. Sheila McIlraith
-                                at the University of Toronto. Together with collegues at the university, I recently created a state-of-the-art text-to-behavior agent called STEVE-1, 
-                                which was presented at NeurIPS 2023 as a spotlight paper.
-                                In this paper, we introduce a methodology for instruction-tuning foundation models of <i>behavior</i> in a scalable, self-supervised way.
 
-                            <p>
-                                In the past, I've worked with collegues at the University of Waterloo on attempts to rethink the basic structure of neural networks
-                                by taking more inspiration from the human brain. I also spent time creating and deploying algorithms that 
-                                automatically understand CT scans at Claronav, a global leader in surgical navigation. 
-                                In another interesting project at Waterloo, we introduced a novel histopathology image retrieval algorithm that can
-                                help pathologists diagnose cancer and other diseases.
-                            </p>
-                            <p class="about-description second">I first fell in love with the field of AI since it was
-                                the bridge between both of my passions: the brain and technology. Since then, I have spoken at
-                                various international conferences with the aim of educating and inspiring others to think about future of AI. 
-                                To ensure a positive future for humanity alongside general AI, we must ask and explore these questions now.
-                            <p class="about-description last "><i>My goal? To help spark the next wave of human innovation
-                                and help humanity reach a new evolutionary step.</i></p>
-                            <address>
-                                <ul class="list-inline about-info">
-                                    <li class="list-inline-item">
-                                        <span>Email:</span>
-                                        <p><a href="mailto:lifshitz.shalev@gmail.com">lifshitz.shalev@gmail.com</a></p>
-                                    </li>
-                                    <li class="list-inline-item mb-0">
-                                        <span>Youtube:</span>
-                                        <p><a href="https://www.youtube.com/channel/UCj_PiE2tDScdXu9BQgDXD1A">Watch My
-                                            Talks</a></p>
-                                    </li>
-                                    <li class="list-inline-item mb-1">
-                                        <!-- <span>LinkedIn:</span> -->
-                                        <p>
-                                            <span>Reach Out:</span>
-                                            <a href="https://twitter.com/Shalev_lif">Twitter/X</a>
-                                            &nbsp&nbsp&nbsp
-                                            <a href="https://www.linkedin.com/in/shalev-lifshitz/">LinkedIn</a> 
-                                            &nbsp&nbsp&nbsp
-                                            <a href="https://github.com/Shalev-Lifshitz">GitHub</a>
-                                        </p>
-                                    </li>
-                                    <li class="list-inline-item">
-                                        <span>Academic:</span>
-                                        <p><a href="https://scholar.google.ca/citations?user=brwVM08AAAAJ&hl=en&oi=ao">Google Scholar</a></p>
-                                    </li>
-                                </ul>
-                            </address>
-                            <a class="btn button-scheme" href="Resume.pdf" role="button">View My Resume</a>
-                        </div>
-                    </div>
+    <div class="content-container">
+        <!-- About -->
+        <section id="about">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="paper-imgs/at_table_thin.jpg" alt="Shalev Lifshitz" class="img-fluid img-thumbnail">
+                </div>
+                <div class="about-text">
+                    <h2 class="about-title">About Me</h2>
+                    <h6 class="about-role">AI Researcher and Engineer</h6>
+                    <p>I'm an AI researcher and engineer striving to develop of technology. For the past 8 years, I've been engineering large ML systems and publishing frontier AI research with the Vector Institute, University of Toronto, Harvard, Oxford, and other leading AI institutions. I'm currently the co-founder of a stealth startup building security for AGI.</p>
+                    
+                    <p>I've built state-of-the-art AI models that turn text into keyboard/mouse actions (NeurIPS 2023), created a system for scaling test-time compute to improve LLMs without additional training (CoLM 2025), and developed train-time RL algorithms that teach LLMs to reason during pretraining (LanGame @NeurIPS 2024). I've also created AI algorithms to help diagnose cancer, built the entire ML infrastructure for a top surgical navigation company, and invented new neural network architectures inspired by the human brain. In my free time, I enjoy coding systems from scratch in C/C++, including operating systems, 3D rendering engines, and game engines.</p>
+
+                    <p>I first fell in love with the field of AI since it was the bridge between both of my passions: the brain and technology. Since then, I have spoken at various international conferences with the aim of educating and inspiring others to think about future of AI. To ensure a positive future for humanity alongside general AI, we must ask and explore these questions now.</p>
+
+                    <p>My goal is to help spark the next wave of human innovation and help humanity reach a new evolutionary step. Most importantly, to keep humanity safe and secure our future alongside superintelligent AI systems.</p>
                 </div>
             </div>
-        </div>
+        </section>
     </div>
-</section>
-<!-- Portfolio Area -->
-<section class="single-section portfolio-area" id="portfolio-area">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="section-heading">
-                    <h2 class="section-title">Portfolio</h2>
+
+    <div class="research-talks-container">
+        <!-- Research -->
+        <section id="research">
+            <h2>Selected Research Works</h2>
+            
+            <div class="paper">
+                <div class="paper-image">
+                    <a href="https://arxiv.org/abs/2502.20379" target="_blank">
+                        <img src="paper-imgs/multi agent verification.JPG" alt="Multi-Agent Verification">
+                    </a>
+                </div>
+                <div class="paper-info">
+                    <h3><a href="https://arxiv.org/abs/2502.20379" target="_blank">Multi-Agent Verification: Scaling Test-Time Compute with Multiple Verifiers</a></h3>
+                    <div class="paper-authors"><strong>Shalev Lifshitz</strong>, Sheila McIlraith, and Yilun Du</div>
+                    <div class="paper-venue">International Conference on Language Modeling, 2025</div>
                 </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-12 p-0">
-                <ul class="list-inline filter-control d-flex justify-content-center" role="group"
-                    aria-label="Filter Control">
-                    <li class="list-inline-item tab-active" data-group="all">All</li>
-                    <li class="list-inline-item" data-group="papers">Papers</li>
-                    <li class="list-inline-item" data-group="speaking-engagements">Speaking Engagements</li>
-                </ul>
-                <div class="shufflejs" id="shufflejs">
-                    <div class="js-item col-6 col-lg-4" data-groups='["papers"]'>
-                        <div class="item-overlay">
-                            <img class="img-fluid" alt="Item" src="img/steve1_main_r.jpg">
-                            <div class="overlay-content">
-                                <h6 class="overlay-title">Paper: STEVE-1: A Generative Model for Text-to-Behaviour in Minecraft</h6>
-                                <div class="overlay-icons">
-                                    <a href="https://arxiv.org/pdf/2306.00937.pdf">
-                                        <i class="icon ion-md-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="js-item col-6 col-lg-4" data-groups='["speaking-engagements"]'>
-                        <div class="item-overlay">
-                            <img class="img-fluid" alt="Item" src="img/sxsw2023.jpg">
-                            <div class="overlay-content">
-                                <h6 class="overlay-title">Talk at SXSW 2023</h6>
-                                <div class="overlay-icons">
-                                    <a href="https://www.youtube.com/watch?v=jegUBqFlwxY">
-                                        <i class="icon ion-md-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="js-item col-6 col-lg-4" data-groups='["papers"]'>
-                        <div class="item-overlay">
-                            <img class="img-fluid" alt="Item" src="img/gramBarcodes_portfolio.jpg">
-                            <div class="overlay-content">
-                                <h6 class="overlay-title">Paper: Gram Barcodes for Histopathology Tissue Texture
-                                    Retrieval</h6>
-                                <div class="overlay-icons">
-                                    <a href="https://arxiv.org/abs/2111.15519">
-                                        <i class="icon ion-md-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="js-item col-6 col-lg-4" data-groups='["speaking-engagements"]'>
-                        <div class="item-overlay">
-                            <img class="img-fluid" alt="Item" src="img/fire_portfolio.jpg">
-                            <div class="overlay-content">
-                                <h6 class="overlay-title">Panel at FiRe 2019: The Future of Human-AI Interaction</h6>
-                                <div class="overlay-icons">
-                                    <a href="https://www.youtube.com/watch?v=oqKTUfLkhYk">
-                                        <i class="icon ion-md-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="js-item col-6 col-lg-4" data-groups='["papers"]'>
-                        <div class="item-overlay">
-                            <img class="img-fluid" alt="Item" src="img/subtractivePerceptron_portfolio.jpg">
-                            <div class="overlay-content">
-                                <h6 class="overlay-title">Paper: Subtractive Perceptrons for Learning Images: A Preliminary Report</h6>
-                                <div class="overlay-icons">
-                                    <a href="https://arxiv.org/abs/1909.12933">
-                                        <i class="icon ion-md-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="js-item col-6 col-lg-4" data-groups='["speaking-engagements"]'>
-                        <div class="item-overlay">
-                            <img class="img-fluid" alt="Item" src="img/ifa_portfolio.jpg">
-                            <div class="overlay-content">
-                                <h6 class="overlay-title">Talk at IFA: Humanity & AI: Preparing for an Intelligent Future</h6>
-                                <div class="overlay-icons">
-                                    <a href="https://www.youtube.com/watch?v=v99e_8X1leI">
-                                        <i class="icon ion-md-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="js-item col-6 col-lg-4" data-groups='["speaking-engagements"]'>
-                        <div class="item-overlay">
-                            <img class="img-fluid" alt="Item" src="img/intotomorrow_portfolio.jpg">
-                            <div class="overlay-content">
-                                <h6 class="overlay-title">Interview on Into Tomorrow</h6>
-                                <div class="overlay-icons">
-                                    <a href="https://www.youtube.com/watch?v=7DH0uAfkE7g">
-                                        <i class="icon ion-md-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="js-item col-6 col-lg-4" data-groups='["speaking-engagements"]'>
-                        <div class="item-overlay">
-                            <img class="img-fluid" alt="Item" src="img/ard_portfolio.jpg">
-                            <div class="overlay-content">
-                                <h6 class="overlay-title">Feature on ARD German National Television</h6>
-                                <div class="overlay-icons">
-                                    <a href="https://www.youtube.com/watch?v=a_YTnGzq6Xc">
-                                        <i class="icon ion-md-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="js-item col-6 col-lg-4" data-groups='["speaking-engagements"]'>
-                        <div class="item-overlay">
-                            <img class="img-fluid" alt="Item" src="img/sxsw_portfolio.jpg">
-                            <div class="overlay-content">
-                                <h6 class="overlay-title">Talk at SXSW: Reforming Civilization with AI</h6>
-                                <div class="overlay-icons">
-                                    <a href="https://www.youtube.com/watch?v=7-eWb3e4Oq4">
-                                        <i class="icon ion-md-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
+            <div class="paper">
+                <div class="paper-image">
+                    <a href="https://openreview.net/pdf?id=BqFRvtO8g4" target="_blank">
+                        <img src="paper-imgs/Train-Time RL.JPG" alt="Reward Functions">
+                    </a>
                 </div>
-                <div class="col-6 col-lg-4 sizer-element"></div>
+                <div class="paper-info">
+                    <h3><a href="https://openreview.net/pdf?id=BqFRvtO8g4" target="_blank">On Reward Functions For Self-Improving Chain-of-Thought Reasoning Without Supervised Datasets</a></h3>
+                    <div class="paper-authors">Thomas Foster*, Eltayeb Ahmed*, Jonathan Cook*, <strong>Shalev Lifshitz</strong>, Tim Rocktäschel, Jakob Foerster</div>
+                    <div class="paper-venue">NeurIPS Language Gamification Workshop, 2024</div>
+                </div>
             </div>
-        </div>
-    </div>
-    </div>
-</section>
-<!-- Footer Area -->
-<footer class="footer-area single-section">
-    <div class="container">
-        <div class="row main-footer">
-            <div class="col-12 col-md-3">
-                <h5 class="column-title">Menu</h5>
-                <ul class="list-unstyled column-content">
-                    <li><a data-scroll href="#header-area">Home</a></li>
-                    <li><a data-scroll href="#about-area">About</a></li>
-                    <li><a data-scroll href="#portfolio-area">Portfolio</a></li>
-                </ul>
-            </div>
-            <div class="col-12 col-md-3">
-            </div>
-            <div class="col-12 col-md-3">
-            </div>
-            <div class="col-12 col-md-3">
-                <h2 class="brand-logo">Shalev Lifshitz</h2>
-                <p class="brand-description">An AI Researcher & Engineer.</p>
-            </div>
-        </div>
-        <div class="row mini-footer">
-            <div class="col-12">
-                <div class="social-medias">
-                    <a class="twitter" href="https://twitter.com/Shalev_lif">
-                        <i class="icon ion-logo-twitter"></i>
+
+            <div class="paper">
+                <div class="paper-image">
+                    <a href="https://arxiv.org/abs/2306.00937" target="_blank">
+                        <img src="paper-imgs/steve1.png" alt="STEVE-1">
                     </a>
-                    <a class="linkedin" href="https://www.linkedin.com/in/shalev-lifshitz/">
-                        <i class="icon ion-logo-linkedin"></i>
+                </div>
+                <div class="paper-info">
+                    <h3><a href="https://arxiv.org/abs/2306.00937" target="_blank">STEVE-1: A Generative Model for Text-to-Behavior in Minecraft</a></h3>
+                    <div class="paper-authors"><strong>Shalev Lifshitz</strong>*, Keiran Paster*, Harris Chan, Jimmy Ba, Sheila McIlraith</div>
+                    <div class="paper-venue">Advances in Neural Information Processing Systems, 2023</div>
+                    <div class="spotlight">Spotlight Paper</div>
+                </div>
+            </div>
+
+            <div class="paper">
+                <div class="paper-image">
+                    <a href="https://arxiv.org/abs/2111.15519" target="_blank">
+                        <img src="paper-imgs/gram barcodes.JPG" alt="Gram Barcodes">
                     </a>
-                    <a class="youtube" href="https://www.youtube.com/channel/UCj_PiE2tDScdXu9BQgDXD1A">
-                        <i class="icon ion-logo-youtube"></i>
+                </div>
+                <div class="paper-info">
+                    <h3><a href="https://arxiv.org/abs/2111.15519" target="_blank">Gram Barcodes for Histopathology Tissue Texture Retrieval</a></h3>
+                    <div class="paper-authors"><strong>Shalev Lifshitz</strong>, Abtin Riasatian, Hamid Tizhoosh</div>
+                    <div class="paper-venue">arXiv preprint, 2021</div>
+                </div>
+            </div>
+
+            <div class="paper">
+                <div class="paper-image">
+                    <a href="https://arxiv.org/abs/1909.12933" target="_blank">
+                        <img src="paper-imgs/s-Perceptron.JPG" alt="Subtractive Perceptrons">
                     </a>
-                    <a class="github" href="https://github.com/Shalev-Lifshitz">
-                        <i class="icon ion-logo-github"></i>
+                </div>
+                <div class="paper-info">
+                    <h3><a href="https://arxiv.org/abs/1909.12933" target="_blank">Subtractive Perceptrons for Learning Images: A Preliminary Report</a></h3>
+                    <div class="paper-authors">Hamid Tizhoosh, Shivam Kalra, <strong>Shalev Lifshitz</strong>, Morteza Babaie</div>
+                    <div class="paper-venue">International Conference on Image Processing Theory, Tools and Applications, 2019</div>
+                </div>
+            </div>
+
+            <div class="more-publications-button">
+                <a href="https://scholar.google.ca/citations?user=brwVM08AAAAJ" target="_blank" class="more-publications-link">
+                    More Research (Google Scholar)
+                </a>
+            </div>
+        </section>
+
+        <!-- Talks -->
+        <section id="talks">
+            <h2>Selected Talks</h2>
+            
+            <!-- Featured Video -->
+            <div class="featured-video">
+                <div class="video-container">
+                    <iframe 
+                        src="https://www.youtube.com/embed/jegUBqFlwxY" 
+                        frameborder="0" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+            
+            <div class="talks-grid">
+                <div class="talk-item">
+                    <a href="https://www.youtube.com/watch?v=oqKTUfLkhYk" target="_blank" class="talk-link">
+                        <div class="talk-thumbnail">
+                            <img src="https://img.youtube.com/vi/oqKTUfLkhYk/maxresdefault.jpg" alt="FiRe 2019 Talk">
+                            <div class="play-overlay">▶</div>
+                        </div>
+                        <div class="talk-info">
+                            <h3>Panel at FiRe 2019</h3>
+                            <p>The Future of Human-AI Interaction</p>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="talk-item">
+                    <a href="https://www.youtube.com/watch?v=v99e_8X1leI" target="_blank" class="talk-link">
+                        <div class="talk-thumbnail">
+                            <img src="https://img.youtube.com/vi/v99e_8X1leI/maxresdefault.jpg" alt="IFA Berlin 2019 Talk">
+                            <div class="play-overlay">▶</div>
+                        </div>
+                        <div class="talk-info">
+                            <h3>Talk at IFA Berlin</h3>
+                            <p>Humanity & AI: Preparing for an Intelligent Future</p>
+                        </div>
                     </a>
                 </div>
             </div>
+            
+            <div class="more-talks-button">
+                <a href="https://www.youtube.com/channel/UCj_PiE2tDScdXu9BQgDXD1A" target="_blank" class="more-talks-link">
+                    More Talks (YouTube)
+                </a>
+            </div>
+        </section>
+        
+        <!-- Footer -->
+        <hr style="border: none; height: 1px; background-color: #ddd; margin: 40px 0;">
+        <div class="footer-content">
+            <div class="footer-left">
+                <div class="footer-name">Shalev<br>Lifshitz</div>
+                <div class="copyright">
+                    <p>© Copyright 2025 Shalev Lifshitz.</p>
+                </div>
+            </div>
+            <div class="social-icons">
+                <a href="mailto:lifshitz.shalev@gmail.com" class="social-icon" title="Email">
+                    <i class="icon ion-md-mail"></i>
+                </a>
+                <a href="https://scholar.google.ca/citations?user=brwVM08AAAAJ" class="social-icon" title="Google Scholar">
+                    <i class="icon ion-md-school"></i>
+                </a>
+                <a href="https://github.com/Shalev-Lifshitz" class="social-icon" title="GitHub">
+                    <i class="icon ion-logo-github"></i>
+                </a>
+                <a href="https://twitter.com/Shalev_lif" class="social-icon" title="X">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" fill="currentColor"/>
+                    </svg>
+                </a>
+            </div>
         </div>
     </div>
-</footer>
-<!-- JS Assets -->
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.bundle.min.js"></script>
-<script src="js/jquery.nav.min.js"></script>
-<script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=Set,Array.from,Object.assign,Array.prototype.find,Array.prototype.includes"></script>
-<script src="js/shuffle.min.js"></script>
-<script src="js/lity.min.js"></script>
-<script src="js/owl.carousel.min.js"></script>
-<script src="js/main.js"></script>
-<script src="js/particles.js"></script>
-<script src="js/variants/particles.js"></script>
+
+    <!-- JS Assets -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.nav.min.js"></script>
+    <script src="js/shuffle.min.js"></script>
+    <script src="js/lity.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/variants/particles.js"></script>
 </body>
-
 </html>

@@ -609,6 +609,7 @@ a:hover, a:focus {
 
 .header-area .cd-headline.clip b.is-visible {
   opacity: 1;
+  font-size:50px;
 }
 
 .header-area .description {
