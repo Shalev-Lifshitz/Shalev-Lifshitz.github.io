@@ -321,13 +321,16 @@
         
         .featured-video {
             margin-bottom: 40px;
-            text-align: center;
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
-        .featured-video h3 {
-            font-size: 1.5em;
-            margin-bottom: 20px;
-            color: #333;
+        .featured-video:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
         }
 
         .video-container {
@@ -415,14 +418,14 @@
             }
             
             .paper {
-                flex-direction: column;
-                gap: 10px;
+                flex-direction: row;
+                gap: 15px;
             }
             
             .paper-image {
                 width: 100px;
                 height: 80px;
-                margin: 0 auto;
+                margin: 0;
             }
             
             .footer-content {
@@ -584,6 +587,10 @@
                         allowfullscreen>
                     </iframe>
                 </div>
+                <div class="talk-info">
+                    <h3>Talk at SXSW 2023 (Austin)</h3>
+                    <p>The State of AI and a Look to the Future</p>
+                </div>
             </div>
             
             <div class="talks-grid">
@@ -594,7 +601,7 @@
                             <div class="play-overlay">▶</div>
                         </div>
                         <div class="talk-info">
-                            <h3>Panel at FiRe 2019</h3>
+                            <h3>Panel at FiRe 2019 (San Diego)</h3>
                             <p>The Future of Human-AI Interaction</p>
                         </div>
                     </a>
@@ -607,7 +614,7 @@
                             <div class="play-overlay">▶</div>
                         </div>
                         <div class="talk-info">
-                            <h3>Talk at IFA Berlin</h3>
+                            <h3>Talk at IFA (Berlin)</h3>
                             <p>Humanity & AI: Preparing for an Intelligent Future</p>
                         </div>
                     </a>
