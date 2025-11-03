@@ -494,23 +494,112 @@
         /* Make hero content bigger */
         .header-area .greet {
             font-size: calc(1em * 2.20) !important;
+            line-height: 1.2 !important;
         }
 
         .header-area .skills {
             font-size: calc(60px * 1.40) !important;
+            line-height: 1.1 !important;
         }
 
         .header-area .cd-headline.clip b.is-visible {
             font-size: calc(50px * 1.40) !important;
+            line-height: 1.1 !important;
         }
 
         .header-area .description {
             font-size: calc(16px * 1.40) !important;
+            line-height: 1.4 !important;
         }
 
         .header-area .btn {
             font-size: calc(14px * 1.40) !important;
             padding: calc(9px * 1.40) calc(38px * 1.40) !important;
+        }
+
+        /* Mobile responsive adjustments for hero section */
+        @media (max-width: 991.98px) {
+            .header-area .greet {
+                font-size: calc(1em * 1.00) !important;
+                margin-bottom: 12px !important;
+                line-height: 1.1 !important;
+            }
+
+            .header-area .skills {
+                margin-bottom: 15px !important;
+                line-height: 1.0 !important;
+            }
+
+            .header-area .cd-headline.clip b.is-visible {
+                font-size: calc(40px * 1.00) !important;
+                line-height: 1.0 !important;
+            }
+
+            .header-area .description {
+                font-size: calc(15px * 1.00) !important;
+                margin-bottom: 20px !important;
+                line-height: 1.5 !important;
+            }
+
+            .header-area .btn {
+                font-size: calc(14px * 1.00) !important;
+                padding: 9px 38px !important;
+                margin: 0 5px 10px 5px !important;
+            }
+        }
+
+        @media (max-width: 575.98px) {
+            .header-area .greet {
+                font-size: calc(1em * 0.9) !important;
+                margin-bottom: 10px !important;
+                line-height: 1.0 !important;
+            }
+
+            .header-area .skills {
+                margin-bottom: 12px !important;
+                line-height: 0.95 !important;
+            }
+
+            .header-area .cd-headline.clip b.is-visible {
+                font-size: calc(32px * 1.00) !important;
+                line-height: 0.95 !important;
+                display: block !important;
+            }
+
+            .header-area .cd-headline.clip {
+                line-height: 0.95 !important;
+            }
+        }
+
+        @media (max-width: 400px) {
+            .header-area .greet {
+                font-size: calc(1em * 0.85) !important;
+                line-height: 1.0 !important;
+            }
+
+            .header-area .skills {
+                line-height: 0.95 !important;
+            }
+
+            .header-area .cd-headline.clip b.is-visible {
+                font-size: calc(28px * 1.00) !important;
+                line-height: 0.95 !important;
+            }
+
+            .header-area .cd-headline.clip {
+                line-height: 0.95 !important;
+            }
+
+            .header-area .description {
+                font-size: calc(14px * 1.00) !important;
+                margin-bottom: 18px !important;
+                line-height: 1.5 !important;
+            }
+
+            .header-area .btn {
+                font-size: calc(13px * 1.00) !important;
+                padding: 8px 30px !important;
+            }
         }
     </style>
 </head>
@@ -550,7 +639,7 @@
                 <div class="about-text">
                     <h2 class="about-title">About Me</h2>
                     <h6 class="about-role">AI Engineer and Entrepreneur</h6>
-                    <p>I'm an AI engineer and entrepreneur developing the future of technology. I'm currently the co-founder of a stealth startup building cyberdefense for superintelligent AI systems. I've spent the last decade engineering frontier AI systems (computer use, reasoning, verification) and working at the intersection of AI and national security.</p>
+                    <p>I'm an AI engineer and entrepreneur developing the future of technology. I'm currently the co-founder of a stealth startup building security for superintelligent AI systems. I've spent the last decade engineering frontier AI systems (computer use, reasoning, verification) and working at the intersection of AI and national security.</p>
                     
                     <p>I've built state-of-the-art AI models that turn text into keyboard/mouse actions (NeurIPS 2023), created a system for scaling test-time compute to improve LLMs without additional training (CoLM 2025), and developed train-time RL algorithms that teach LLMs to reason during pretraining (LanGame @NeurIPS 2024). I've also created AI algorithms to help diagnose cancer, built the entire ML infrastructure for a top surgical navigation company, built AI to simulate cities for the defense sector, and invented new neural network architectures inspired by the human brain. In my free time, I enjoy coding systems from scratch in C/C++, including operating systems, 3D rendering engines, and game engines.</p>
 
